@@ -10,6 +10,7 @@ Each one documents the methodology I followed — recon, enumeration, access, pr
 | # | Box | Platform | Difficulty | Topics |
 |---|---|---|---|---|
 | 01 | [Pickle Rick](01-pickle-rick/) | TryHackMe | Easy | Web enumeration · Command injection · Privilege escalation (sudo) |
+| 02 | [RootMe](02-rootme/) | TryHackMe | Easy | Web enumeration (Gobuster) · File upload · Reverse shell · Privilege escalation (SUID) |
 
 ## 🧭 Methodology
 
