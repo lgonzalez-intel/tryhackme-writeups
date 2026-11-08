@@ -97,8 +97,6 @@ less /var/www/user.txt
 find / -perm -4000 2>/dev/null
 ```
 
-> ⚠️ Run this **on the victim**, not on your own Kali — a desktop Kali's SUID list looks completely different and will send you chasing the wrong binary.
-
 Most results are legitimate (`passwd`, `mount`, `su`…). The odd one out is **`python`**: an interpreter with SUID has no business being there, and it can run arbitrary code as root.
 
 Looked up on [GTFOBins](https://gtfobins.github.io/) (the standard catalogue of how to abuse each binary), the SUID entry gives:
@@ -127,7 +125,7 @@ less /root/root.txt
 - Reverse shell vs bind shell, and why the victim connects back (to get past the firewall).
 - A reverse shell often dies on `Ctrl+C` — use it only once the work is saved.
 - SUID lets a program run as its owner; an interpreter (python, perl…) with SUID is an instant escalation path.
-- `find / -perm -4000` lists SUID binaries; `2>/dev/null` just hides permission-denied noise. Run it **on the target**.
+- `find / -perm -4000` lists SUID binaries; `2>/dev/null` just hides permission-denied noise.
 - Not every SUID binary is exploitable — cross-check against GTFOBins or automate with LinPEAS.
 - `id` tells you who you are: `euid=0` means effective root.
 
