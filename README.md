@@ -11,6 +11,7 @@ Each one documents the methodology I followed — recon, enumeration, access, pr
 |---|---|---|---|---|
 | 01 | [Pickle Rick](01-pickle-rick/) | TryHackMe | Easy | Web enumeration · Command injection · Privilege escalation (sudo) |
 | 02 | [RootMe](02-rootme/) | TryHackMe | Easy | Web enumeration (Gobuster) · File upload · Reverse shell · Privilege escalation (SUID) |
+| 03 | [Brooklyn Nine Nine](03-brooklyn-nine-nine/) | TryHackMe | Easy | Anonymous FTP · SSH brute force (Hydra) · Privilege escalation (sudo) |
 
 ## 🧭 Methodology
 
